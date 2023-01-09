@@ -1,4 +1,10 @@
 <hello name="{{ name }}"></hello>
-<p>
-  Inicie editando e veja a mágica acontecer!!
-</p>
+<p>Inicie editando e veja a mágica acontecer!!</p>
+<app-nova-transferencia
+  (aoTransferir)="transferir($event)"
+></app-nova-transferencia>
+
+<app-extrato></app-extrato>
+
+<p>Valor: {{ transferencia?.valor }}</p>
+<p>Destino: {{ transferencia?.destino }}</p>
